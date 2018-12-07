@@ -11,6 +11,7 @@
 * 基于sessionStorage
 * 返回可记录滚动条位置
 * 手动刷新，不影响判断前进后退
+* 前进后退的判断与路由路径规则无关
 
 ## demo gif
 <img src="https://github.com/dreamback/vue-router-transition/blob/master/src/assets/demo.gif?raw=true" >
