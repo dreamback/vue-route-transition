@@ -1,27 +1,19 @@
 # vue-router-transition
 
-> A Vue.js project
+> vue router 切换动画
 
 ## Build Setup
 
-``` bash
-# install dependencies
-npm install
+## 特性
 
-# serve with hot reload at localhost:8080
-npm run dev
+* 模拟前进后退动画
+* 基于css3流畅动画
+* 基于sessionStorage
+* 返回可记录滚动条位置
 
-# build for production with minification
-npm run build
+## demo gif
+<img src="" width="220" height="220" >
 
-# build for production and view the bundle analyzer report
-npm run build --report
+## 开源协议
 
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+本项目基于 [MIT](https://zh.wikipedia.org/wiki/MIT%E8%A8%B1%E5%8F%AF%E8%AD%89) 协议，请自由地享受和参与开源。
