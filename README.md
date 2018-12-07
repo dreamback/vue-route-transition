@@ -12,7 +12,9 @@
 * 返回可记录滚动条位置
 
 ## demo gif
-<img src="" width="220" height="220" >
+<img src="https://github.com/dreamback/vue-router-transition/blob/master/src/assets/demo.gif?raw=true" width="220" height="220" >
+
+文档未完善...
 
 ## 开源协议
 
