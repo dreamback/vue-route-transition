@@ -4,7 +4,8 @@
     <van-cell-group>
       <van-cell title="评分" is-link value="Rate" :to="{path:'/rate'}" />
     </van-cell-group>
-    <van-cell-group style="margin:600px 0 300px">
+    <p style="text-align:center;padding-top:30px">请向下滚动</p>
+    <van-cell-group style="margin:300px 0 300px">
       <van-cell title="记录滚动条位置" is-link value="Rate" :to="{path:'/rate'}" />
     </van-cell-group>
     <van-tabbar slot="footer" :fixed="false" v-model="active">

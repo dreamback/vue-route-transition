@@ -1,5 +1,5 @@
 <template>
-  <vue-router-transition>
+  <vue-router-transition id="app">
   </vue-router-transition>
 </template>
 
