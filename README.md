@@ -2,21 +2,19 @@
 
 > vue router 切换动画
 
-## Build Setup
-
 ## 特性
 
 * 模拟前进后退动画
 * 基于css3流畅动画
-* 基于sessionStorage
+* 基于sessionStorag，手动刷新不影响判断前进后退
 * 返回可记录滚动条位置
-* 手动刷新，不影响判断前进后退
 * 前进后退的判断与路由路径规则无关
+* 支持任何
 
-## demo gif
-<img src="https://github.com/dreamback/vue-router-transition/blob/master/src/assets/demo.gif?raw=true" >
+## demo
+<img src="https://github.com/dreamback/vue-router-transition/blob/master/src/assets/demo.gif?raw=true">
 
-文档未完善...
+## 安装
 
 ## 开源协议
 

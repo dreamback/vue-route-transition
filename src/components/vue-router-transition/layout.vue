@@ -9,7 +9,7 @@
 </template>
 <script>
 export default {
-  name: 'route-layout',
+  name: 'router-layout',
   data () {
     return {
       cId: this.id || this.$route.path.replace(/\//g, '_') || '_null_'
