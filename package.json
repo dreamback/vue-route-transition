@@ -1,16 +1,17 @@
 {
-  "name": "vue-router-transition",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
+  "name": "vue-route-transition",
+  "version": "1.0.2",
+  "description": "A Vue.js router transition project vue 路由动画",
   "author": "dreamback",
-  "private": true,
+  "main": "lib/vue_router_transition.min.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
     "lint": "eslint --fix --ext .js,.vue src test/unit",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "npm": "node build/webpack.npm.conf.js"
   },
   "dependencies": {
     "vant": "^1.4.8",
@@ -82,5 +83,6 @@
     "not ie <= 11",
     "Android >= 4.0",
     "iOS >= 8"
-  ]
+  ],
+  "homepage": "https://github.com/dreamback/vue-router-transition"
 }

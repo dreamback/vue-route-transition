@@ -6,6 +6,7 @@ import router from './router'
 import RouterTransition from './components/vue-router-transition/'
 import Vant from 'vant'
 import 'vant/lib/index.css'
+// import RouterTransition from '../lib/vue_router_transition.min'
 
 Vue.config.productionTip = false
 Vue.use(RouterTransition)

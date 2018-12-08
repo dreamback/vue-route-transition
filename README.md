@@ -16,12 +16,28 @@
 ## 手机扫码
 <img src="https://github.com/dreamback/vue-router-transition/blob/master/src/assets/qrcode.png?raw=true">
 
-## 使用
-包含两个组件
+## 说明
+配套包含两个组件
 * `vue-router-transition` 负责动画
 * `router-layout` 负责页面排版。 主要是解决`transform`动画，`position:fixed`异常问题  
 
-如果有吸附头部，或吸附底部元素的情况下才需要使用`router-layout`组件
+## 像往常一样使用
+```
+npm i vue-route-transition --save
+```
+main.js  
+``` javascript
+import RouterTransition from 'vue-route-transition/'
+Vue.use(RouterTransition)
+```
+App.vue
+``` html
+<template>
+  <vue-router-transition id="app">
+  </vue-router-transition>
+</template>
+```
+页面，如果有吸附头部，或吸附底部元素的情况下才需要使用`router-layout`组件
 ``` html
 <template>
   <router-layout>
