@@ -1,4 +1,4 @@
-# vue-router-transition
+# vue-route-transition
 
 > vue router 切换动画
 
@@ -12,13 +12,17 @@
 * 支持任意基于Vue的UI框架
 
 ## demo
-<img src="https://github.com/dreamback/vue-router-transition/blob/master/src/assets/demo.gif?raw=true">
+<img src="https://github.com/dreamback/vue-route-transition/blob/master/src/assets/demo.gif?raw=true">  
+
 ## 手机扫码
-<img src="https://github.com/dreamback/vue-router-transition/blob/master/src/assets/qrcode.png?raw=true">
+<img src="https://github.com/dreamback/vue-route-transition/blob/master/src/assets/qrcode.png?raw=true">  
+
+[在线预览](https://dreamback.github.io/vue-route-transition/)
+
 
 ## 说明
 配套包含两个组件
-* `vue-router-transition` 负责动画
+* `vue-route-transition` 负责动画
 * `router-layout` 负责页面排版。 主要是解决`transform`动画，`position:fixed`异常问题  
 
 ## 像往常一样使用
@@ -27,14 +31,14 @@ npm i vue-route-transition --save
 ```
 main.js  
 ``` javascript
-import RouterTransition from 'vue-route-transition/'
-Vue.use(RouterTransition)
+import RouteTransition from 'vue-route-transition'
+Vue.use(RouteTransition)
 ```
 App.vue
 ``` html
 <template>
-  <vue-router-transition id="app">
-  </vue-router-transition>
+  <vue-route-transition id="app">
+  </vue-route-transition>
 </template>
 ```
 页面，如果有吸附头部，或吸附底部元素的情况下才需要使用`router-layout`组件
@@ -53,7 +57,9 @@ App.vue
   </router-layout>
 </template>
 ```
-参考文件 https://github.com/dreamback/vue-router-transition/blob/master/src/pages/index.vue
+[参考文件](https://github.com/dreamback/vue-route-transition/blob/master/src/pages/index.vue)  
+
+
 
 ## 开源协议
 

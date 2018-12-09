@@ -1,6 +1,6 @@
 {
   "name": "vue-route-transition",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A Vue.js router transition project vue 路由动画",
   "author": "dreamback",
   "main": "lib/vue_router_transition.min.js",
@@ -84,5 +84,5 @@
     "Android >= 4.0",
     "iOS >= 8"
   ],
-  "homepage": "https://github.com/dreamback/vue-router-transition"
+  "homepage": "https://github.com/dreamback/vue-route-transition"
 }

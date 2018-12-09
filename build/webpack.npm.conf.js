@@ -8,10 +8,10 @@ spinner.start()
  
 const webpackConfig = {
     devtool: 'source-map',
-    entry: "./src/components/vue-router-transition/index.js",//入口文件，就是上步骤的src目录下的index.js文件，
+    entry: "./src/components/vue-route-transition/index.js",//入口文件，就是上步骤的src目录下的index.js文件，
     output: {
         path: path.resolve(__dirname, '../lib'),//输出路径，就是上步骤中新建的dist目录，
-        filename: 'vue_router_transition.min.js',
+        filename: 'vue_route_transition.min.js',
         libraryTarget: 'umd',
         umdNamedDefine: true
     },

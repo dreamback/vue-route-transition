@@ -3,13 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import RouterTransition from './components/vue-router-transition/'
+// import RouteTransition from './components/vue-route-transition/'
 import Vant from 'vant'
 import 'vant/lib/index.css'
-// import RouterTransition from '../lib/vue_router_transition.min'
+import RouteTransition from '../lib/vue_route_transition.min'
 
 Vue.config.productionTip = false
-Vue.use(RouterTransition)
+Vue.use(RouteTransition)
 Vue.use(Vant)
 /* eslint-disable no-new */
 new Vue({
