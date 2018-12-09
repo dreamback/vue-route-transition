@@ -1,9 +1,19 @@
 {
   "name": "vue-route-transition",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A Vue.js router transition project vue 路由动画",
   "author": "dreamback",
   "main": "lib/vue_router_transition.min.js",
+  "keywords": [
+    "vue-route-transition",
+    "vue-router-transition",
+    "vue-router-slide",
+    "vue-router-animate",
+    "vue-路由动画",
+    "路由动画",
+    "router-transition",
+    "route-transition"
+  ],
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
