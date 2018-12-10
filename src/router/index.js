@@ -7,8 +7,18 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
-      component: index
+      path: '',
+      component: index,
+      children: [{
+        path: '/',
+        component: r => require(['@/pages/home'], r)
+      }, {
+        path: '/tab',
+        component: r => require(['@/pages/tab'], r)
+      }, {
+        path: '/swipe',
+        component: r => require(['@/pages/swipe'], r)
+      }]
     },
     {
       path: '/rate',

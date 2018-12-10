@@ -3,10 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-// import RouteTransition from './components/vue-route-transition/'
+import RouteTransition from './components/vue-route-transition/'
 import Vant from 'vant'
 import 'vant/lib/index.css'
-import RouteTransition from '../lib/vue_route_transition.min'
+// import RouteTransition from '../lib/vue_route_transition.min'
 
 Vue.config.productionTip = false
 Vue.use(RouteTransition)

@@ -57,7 +57,19 @@ App.vue
   </router-layout>
 </template>
 ```
-[参考文件](https://github.com/dreamback/vue-route-transition/blob/master/src/pages/index.vue)  
+如果存在子路由,需手动设置router-layout的`id`属性，滚动条定位作用。
+``` html
+<router-layout id="__index">
+  <router-view></router-view>
+  <van-tabbar slot="footer" :fixed="false" v-model="active">
+    <van-tabbar-item to="/" icon="shop">标签</van-tabbar-item>
+    <van-tabbar-item to="/tab" icon="chat">标签</van-tabbar-item>
+    <van-tabbar-item to="/swipe" icon="records">标签</van-tabbar-item>
+  </van-tabbar>
+</router-layout>
+```  
+
+[github](https://github.com/dreamback/vue-route-transition)  
 
 
 
