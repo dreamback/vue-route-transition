@@ -1,9 +1,9 @@
 {
   "name": "vue-route-transition",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A Vue.js router transition project vue 路由动画",
   "author": "dreamback",
-  "main": "lib/vue_router_transition.min.js",
+  "main": "lib/vue_route_transition.min.js",
   "keywords": [
     "vue-route-transition",
     "vue-router-transition",
@@ -26,6 +26,7 @@
   "dependencies": {
     "vant": "^1.4.8",
     "vue": "^2.5.2",
+    "vue-route-transition": "^1.0.7",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
