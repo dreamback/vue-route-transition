@@ -7,7 +7,7 @@
     <div style="margin:0 20px;">
       <van-button size="large" type="primary" @click="$router.go(-1)">$router.go(-1)</van-button>
     </div>
-    <p style="text-align:center;padding-top:30px">请向下滚动</p>
+    <p style="text-align:center;padding-top:30px">该页面路由配置了 meta: {keepAlive: false}<br>关闭了缓存功能</p>
     <van-cell-group style="margin:300px 0 300px">
       <van-cell title="更多" is-link :to="{path:'/demo'}" />
     </van-cell-group>
@@ -19,6 +19,9 @@ export default {
     return {
       value: 3
     }
+  },
+  mounted () {
+
   }
 }
 </script>

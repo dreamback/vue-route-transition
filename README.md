@@ -37,7 +37,10 @@ Vue.use(RouteTransition)
 App.vue
 ``` html
 <template>
-  <vue-route-transition id="app">
+  // keepAlive默认true，开启缓存可以记录滚动条位置
+  // 同时支持路由配置meta:{keepAlive:false} 关闭某个页面缓存
+  <vue-route-transition id="app" :keepAlive="true">
+    
   </vue-route-transition>
 </template>
 ```

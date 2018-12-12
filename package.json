@@ -1,6 +1,6 @@
 {
   "name": "vue-route-transition",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Vue.js router transition project vue 路由动画",
   "author": "dreamback",
   "main": "lib/vue_route_transition.min.js",

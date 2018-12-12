@@ -1,6 +1,5 @@
 <template>
-  <vue-route-transition id="app">
-  </vue-route-transition>
+  <vue-route-transition id="app" :keepAlive="true"></vue-route-transition>
 </template>
 
 <script>

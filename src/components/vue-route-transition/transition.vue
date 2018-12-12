@@ -1,7 +1,7 @@
 <template>
   <div class="vue-route-transition">
     <transition :name="state.pageDirection" @leave="setRouterMap">
-      <keep-alive v-if="$route.meta.keepAlive!==false">
+      <keep-alive v-if="this.keepAlive===true && $route.meta.keepAlive!==false">
         <router-view></router-view>
       </keep-alive>
       <router-view v-else></router-view>
@@ -13,6 +13,12 @@ var localSessionRouteChain = sessionStorage.getItem('$$routeChain') || []
 
 export default {
   name: 'vue-route-transition',
+  props: {
+    keepAlive: {
+      type: Boolean,
+      default: true
+    }
+  },
   data: function () {
     try {
       localSessionRouteChain = this.$route.path !== '/' ? JSON.parse(localSessionRouteChain) : []
@@ -53,7 +59,6 @@ export default {
       this.state.routerMap['from'] = from.path
     },
     setRouterMap () {
-      // debugger
       let dir = this.state.pageDirection
       let to = this.state.routerMap.to.replace(/\//g, '_')
       let from = this.state.routerMap.from.replace(/\//g, '_')
@@ -63,7 +68,9 @@ export default {
           this.state.routerMap[from] = document.getElementById(from).scrollTop
         } else if (dir === 'slide-right') {
           // 返回
-          document.getElementById(to).scrollTop = this.state.routerMap[to]
+          if (this.keepAlive === true && this.$route.meta.keepAlive !== false) {
+            document.getElementById(to).scrollTop = this.state.routerMap[to]
+          }
         } else {
         }
       } catch (error) {
@@ -83,7 +90,7 @@ export default {
         this.addRouteChain(to)
       } else {
         let lastBeforeRoute = this.state.routeChain[routeLength - 2]
-        if (lastBeforeRoute.path === to.path) {
+        if (lastBeforeRoute.path === to.path && to.meta.slideLeft !== true) {
           this.popRouteChain()
           this.setPageDirection({dir: 'slide-right', to, from})
         } else {

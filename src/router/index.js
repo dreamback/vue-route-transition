@@ -22,6 +22,7 @@ export default new Router({
     },
     {
       path: '/rate',
+      meta: {keepAlive: false},
       component: r => require(['@/pages/rate'], r)
     },
     {
