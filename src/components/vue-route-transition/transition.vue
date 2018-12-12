@@ -9,15 +9,16 @@
   </div>
 </template>
 <script>
-var localSessionRouteChain = sessionStorage.getItem('$$routeChain')
-try {
-  localSessionRouteChain = location.hash !== '#/' ? JSON.parse(localSessionRouteChain) : []
-} catch (error) {
-  localSessionRouteChain = []
-}
+var localSessionRouteChain = sessionStorage.getItem('$$routeChain') || []
+
 export default {
   name: 'vue-route-transition',
   data: function () {
+    try {
+      localSessionRouteChain = this.$route.path !== '/' ? JSON.parse(localSessionRouteChain) : []
+    } catch (error) {
+      localSessionRouteChain = []
+    }
     return {
       state: {
         addCount: localSessionRouteChain.length,
